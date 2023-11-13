@@ -4,7 +4,9 @@ package Oop2.week51;
 public class SingletonTest {
     private static SingletonTest instance;
 
-    private SingletonTest() {}
+    private SingletonTest() {
+        System.out.println("new object has been created");
+    }
 
     public static SingletonTest getInstance() {
         if (instance == null) {
